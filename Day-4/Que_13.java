@@ -7,7 +7,7 @@ public class assign_13 {
     int n = sc.nextInt();
     int a=0 , b=1;
     System.out.println("the fibonacci series: \n0\n1");
-    for(int i=0 ; i<n ; i++){
+    for(int i=0 ; i<=n ; i++){
         int c = a+b;
         a=b;
         b=c;
