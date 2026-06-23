@@ -11,10 +11,15 @@ public class assign_16 {
     System.out.println("The armstrong number in the given range:");
     for(int i=a ; i<=b ; i++){
         int n=i;
-        int original = n , sum=0;
+        int original = n , temp = n , count=0 , sum=0;
+
+        while (temp!=0){
+            temp=temp/10;
+            count++;
+        }
 while(n!=0){
     int r=n%10;
-            sum = sum + (r*r*r);
+            sum = sum + (int)Math.pow(r,count);
             n=n/10;
 
 }
