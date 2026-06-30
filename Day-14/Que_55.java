@@ -1,0 +1,28 @@
+import java.util.*;
+public class assign_55 {
+    //Write a program to find Second largest element. 
+    public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number of element");
+    int n = sc.nextInt();
+    int arr[] = new int[n];
+    System.out.println("Enter the number of element");
+    for(int i=0 ; i<n ; i++){
+        arr[i] = sc.nextInt();
+    }
+    int largest = arr[0];
+    int second_largest = arr[0];
+    for(int i=0 ; i<n ; i++){
+        if(largest<arr[i]){
+        second_largest = largest;
+        largest = arr[i];
+        }
+        else if(arr[i]>second_largest || arr[i]!=largest){
+            second_largest=arr[i];
+        }
+    }
+    System.out.println("The second largest element is "+second_largest);
+}
+    
+    
+}
